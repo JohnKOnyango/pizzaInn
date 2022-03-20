@@ -26,3 +26,4 @@ function Order(flavour, crust, topping, size, quant){
     this.newSize = size;
 }
 var userInput = new Order(flavour(), topping(), size(), crust(), number());
+var totalCost = (userInput.newSize + userInput.newTopping + userInput.newFlavour + userInput.newCrust)* userInput.newQuant;
