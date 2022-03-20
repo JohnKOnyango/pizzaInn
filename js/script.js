@@ -27,3 +27,8 @@ function Order(flavour, crust, topping, size, quant){
 }
 var userInput = new Order(flavour(), topping(), size(), crust(), number());
 var totalCost = (userInput.newSize + userInput.newTopping + userInput.newFlavour + userInput.newCrust)* userInput.newQuant;
+alert("Your charges for pizza" + totalCost);
+prompt("Enter your email");
+prompt("Enter your phone number");
+prompt("Enter your location");
+alert("Your pizza will be delivered");
