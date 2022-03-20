@@ -23,4 +23,6 @@ function Order(flavour, crust, topping, size, quant){
     this.newTopping = topping;
     this.newQuant = quant;
     this.newFlavour = flavour;
+    this.newSize = size;
 }
+var userInput = new Order(flavour(), topping(), size(), crust(), number());
