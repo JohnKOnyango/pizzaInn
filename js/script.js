@@ -32,3 +32,4 @@ prompt("Enter your email");
 prompt("Enter your phone number");
 prompt("Enter your location");
 alert("Your pizza will be delivered");
+event.preventDefault();
