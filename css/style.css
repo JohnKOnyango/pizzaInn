@@ -1,10 +1,17 @@
-.type {
-  display: inline-block;
+#type {
   text-align: center;
+  display: flex;
+  margin-right: 70px;
+  margin-left: 50px;
 }
 #back {
   color: white;
   text-align: center;
   padding-bottom: 150px;
+  margin-right: 50px;
+  margin-left: 50px;
   background-image: url("https://st.depositphotos.com/1900347/4146/i/600/depositphotos_41466555-stock-photo-image-of-slice-of-pizza.jpg");
+}
+.form {
+  margin-top: 30px;
 }
