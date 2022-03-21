@@ -18,12 +18,14 @@ function number() {
     var pizzaNumber = document.getElementById("quant").value;
     return parseInt(pizzaNumber);
 }
-function Order(flavour, crust, topping, size, quant){
-    this.newCrust = crust;
-    this.newTopping = topping;
-    this.newQuant = quant;
-    this.newFlavour = flavour;
-    this.newSize = size;
+class Order {
+    constructor(flavour, crust, topping, size, quant) {
+        this.newCrust = crust;
+        this.newTopping = topping;
+        this.newQuant = quant;
+        this.newFlavour = flavour;
+        this.newSize = size;
+    }
 }
 var userInput = new Order(flavour(), topping(), size(), crust(), number());
 var totalCost = (userInput.newSize + userInput.newTopping + userInput.newFlavour + userInput.newCrust)* userInput.newQuant;
@@ -32,4 +34,4 @@ prompt("Enter your email");
 prompt("Enter your phone number");
 prompt("Enter your location");
 alert("Your pizza will be delivered");
-e.preventDefault();
+// e.preventDefault();
