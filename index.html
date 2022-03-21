@@ -51,7 +51,8 @@
         />
       </div>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="orders">
+      <h2 style="text-align: center;">Order</h2>
       <form class="center" id="center">
         <label for="Pizza Sizes">Pizza Sizes</label>
         <select class="size" id="size" required>
@@ -77,7 +78,7 @@
     <br />
     <label for="Toppings">Pizza Topping.</label>
     
-    <select class="top" id="top" required>
+    <select class="top" id="topping" required>
       <option label="Pepperoni" value="100">Pepperoni</option>
       <option label="Sausage" value="200">Sausage</option>
     </select>
@@ -85,7 +86,7 @@
     <label for="number">Number of pizza</label>
     <input value="" required placeholder="Number of Pizza..." id="quant"></input>
 <div class="btn">
-  <div>  <button class="subm" id="btn" label="">Submit
+  <div>  <button type="submit" label="">Submit</button>
 
     </button>
   </div>

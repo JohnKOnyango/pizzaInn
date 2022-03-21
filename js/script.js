@@ -1,3 +1,4 @@
+
 $("#center").submit(function(event) {
 
 function flavour() {
@@ -9,7 +10,7 @@ function crust() {
     return parseInt(pizzaCrust);
 }
 function topping() {
-    var pizzaTopping = document.getElementById("top").value;
+    var pizzaTopping = document.getElementById("topping").value;
     return parseInt(pizzaFlavour);
 }
 function size() {
@@ -20,16 +21,23 @@ function number() {
     var pizzaNumber = document.getElementById("quant").value;
     return parseInt(pizzaNumber);
 }
-function Order 
-    (flavour, crust, topping, size, quant) {
-        this.newCrust = crust;
-        this.newTopping = topping;
-        this.newQuant = quant;
-        this.newFlavour = flavour;
-        this.newSize = size;
-    }
 
-var userInput = new Order(flavour(), topping(), size(), crust(), number());
+var price , crust_price;
+let total = 0;
+   function Getpizza
+        ( flavour, crust, topping, size, quant) {
+            this.newCrust = crust;
+            this.newTopping = topping;
+            this.newQuant = quant;
+            this.newFlavour = flavour;
+            this.newSize = size;
+
+        }
+    
+     
+    
+
+ var userInput = new Order (flavour(), topping(), size(), crust(), number());
 
 var totalCost = 
 (userInput.newSize + userInput.newTopping + userInput.newFlavour + userInput.newCrust) * userInput.newQuant;
@@ -38,6 +46,8 @@ prompt("Enter your email");
 prompt("Enter your phone number");
 prompt("Enter your location");
 alert("Your pizza will be delivered");
-$("#center").reset();
-// e.preventDefault();
+
+event.preventDefault();
+
 });
+
